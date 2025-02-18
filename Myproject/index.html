@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Café Cravings</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Cravings Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Café Cravings</h1>
-    <div class="insta-handle">Instagram: @insideout.manu</div>
-  </header>
-  <main>
-    <section id="menu">
-      <h2>Our Menu</h2>
-      <!-- Cheese Cakes Section -->
-      <div class="menu-section">
-        <button class="collapsible">Cheese Cakes</button>
-        <div class="content" id="cheese-cakes">
-          <!-- Items populated by script.js -->
+    <header>
+        <h1>Café Cravings</h1>
+        <div class="insta-handle">@dummy_insta_handle</div>
+    </header>
+    <main>
+        <section>
+            <button class="collapsible">Cheese Cakes</button>
+            <div class="content">
+                <div class="menu-item">
+                    <img src="images/oreocheesecake.png" alt="Cheesecake 1">
+                    <span>Oreo Cheesecake - ₹150</span>
+                    <button onclick="addToCart('Cheesecake 1', 150)">Add</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/basquecheesecake.jpg" alt="Cheesecake 2">
+                    <span>Basque Cheesecake - ₹180</span>
+                    <button onclick="addToCart('Cheesecake 2', 180)">Add</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/classiccheesecake.jpg" alt="Cheesecake 3">
+                    <span>Classic Cheesecake - ₹200</span>
+                    <button onclick="addToCart('Cheesecake 3', 200)">Add</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <button class="collapsible1">Mini Cheese Cakes</button>
+            <div class="content">
+                <div class="menu-item">
+                    <img src="images/biskoffminicheesecake.jpeg" alt="Mini Cheesecake 1">
+                    <span>Biscoff Mini Cheesecake - ₹100</span>
+                    <button onclick="addToCart('Mini Cheesecake 1', 100)">Add</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/biskoffminicheesecake.jpeg" alt="Mini Cheesecake 2">
+                    <span>iscoff Mini Cheesecake - ₹120</span>
+                    <button onclick="addToCart('Mini Cheesecake 2', 120)">Add</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <button class="collapsible2">Chocolate Pudding</button>
+            <div class="content">
+                <div class="menu-item">
+                    <img src="images/Chocolatepudding.jpg" alt="Chocolate Pudding">
+                    <span>Chocolate Pudding - ₹160</span>
+                    <button onclick="addToCart('Chocolate Pudding', 160)">Add</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <button class="collapsible3">Cup Cakes</button>
+            <div class="content">
+                <div class="menu-item">
+                    <img src="images/cupcakes.jpg" alt="Cupcake 1">
+                    <span>Cupcake 1 - ₹80</span>
+                    <button onclick="addToCart('Cupcake 1', 80)">Add</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cupcakes_1.jpg" alt="Cupcake 2">
+                    <span>Cupcake 2 - ₹90</span>
+                    <button onclick="addToCart('Cupcake 2', 90)">Add</button>
+                </div>
+            </div>
+        </section>
+    </main>
+	<section id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <div id="bill">
+            <h3>Total: ₹<span id="total-price">0</span></h3>
+            <button onclick="printReceipt()">Print Receipt</button>
+            <button onclick="clearCart()">Clear Cart</button>
         </div>
-      </div>
-      <!-- Mini Cheese Cakes Section -->
-      <div class="menu-section">
-        <button class="collapsible">Mini Cheese Cakes</button>
-        <div class="content" id="mini-cheese-cakes">
-          <!-- Items populated by script.js -->
-        </div>
-      </div>
-      <!-- Chocolate Pudding Section -->
-      <div class="menu-section">
-        <button class="collapsible">Chocolate Pudding</button>
-        <div class="content" id="chocolate-pudding">
-          <!-- Items populated by script.js -->
-        </div>
-      </div>
-      <!-- Cup Cakes Section -->
-      <div class="menu-section">
-        <button class="collapsible">Cup Cakes</button>
-        <div class="content" id="cup-cakes">
-          <!-- Items populated by script.js -->
-        </div>
-      </div>
     </section>
-    <section id="cart">
-      <h2>Your Cart</h2>
-      <div id="cart-items">
-        <!-- Cart items will appear here -->
-      </div>
-      <div id="bill">
-        <h3>Total: ₹<span id="total">0.00</span></h3>
-        <button id="print-bill">Print Receipt</button>
-      </div>
+    <section id="sales-summary">
+        <h2>Sales Summary</h2>
+        <ul id="sales-list"></ul>
+		<button onclick="resetSales()">Reset Sales</button>
     </section>
-  </main>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
