@@ -1,5 +1,3 @@
-/* style.css */
-/* Set a cheesecake-themed background. Replace the URL with your own image if needed */
 body {
   font-family: 'Georgia', serif;
   background-image: url('images/Cafe_Background.png');
@@ -9,7 +7,6 @@ body {
   padding: 0;
   color: #333;
 }
-/* Header with Instagram handle */
 header {
   background-color: rgba(193, 154, 107, 0.9);
   padding: 20px;
@@ -24,12 +21,6 @@ header .insta-handle {
   font-size: 1em;
   color: #fff;
 }
-/* Headings */
-h1, h2, h3 {
-  margin: 0;
-  padding: 10px 0;
-}
-/* Main container with a semi-transparent white background for readability */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +28,6 @@ main {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-/* Section styles */
 section {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -46,8 +36,46 @@ section {
   border-radius: 5px;
   flex: 1 1 400px;
 }
-/* Collapsible button styles */
 .collapsible {
+  background-color: #c19a6b;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.collapsible1 {
+  background-color: #c19a6b;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.collapsible2 {
+  background-color: #c19a6b;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.collapsible3 {
   background-color: #c19a6b;
   color: white;
   cursor: pointer;
@@ -63,21 +91,15 @@ section {
 .collapsible:hover {
   background-color: #a37d50;
 }
-/* Hidden content for collapsible sections */
 .content {
   padding: 0 15px;
   display: none;
   overflow: hidden;
 }
-/* Menu item styles */
 .menu-item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  padding: 10px;
-  background-color: #fdf6e3;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .menu-item img {
   width: 120px;
@@ -85,40 +107,15 @@ section {
   border-radius: 5px;
   margin-right: 15px;
 }
-.menu-item span {
-  flex: 1;
-  font-size: 1.1em;
+.cart, .sales-summary {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #333;
 }
-.menu-item button {
-  background-color: #c19a6b;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.menu-item button:hover {
-  background-color: #a37d50;
-}
-/* Cart styles */
-#cart {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-#bill {
-  margin-top: 20px;
-  text-align: center;
-}
-#bill button {
-  background-color: #c19a6b;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-#bill button:hover {
-  background-color: #a37d50;
+button {
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
